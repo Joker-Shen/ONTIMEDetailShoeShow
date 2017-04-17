@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pink"
+    tools:context="com.ontime.shoedemo.MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/showLayout"
+            android:orientation="vertical">
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FARO RUNNER"
+                    android:textColor="@android:color/white"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:id="@+id/tvTitle"/>
+                <Button
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btnInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:onClick="showDialog"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your size is available"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    android:layout_alignBottom="@+id/tvTitle"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GEPARD"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:layout_marginLeft="50dp"
+                android:background="@color/gepardcolor"
+                />
+
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="20dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="50dp"
+                android:background="@android:color/white"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rlParentView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                >
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$88.88"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="50dp"/>
+                <ImageButton
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/erweima"
+                    android:background="@drawable/erweima"
+                    android:onClick="click"
+                    />
+                <ImageView
+                    android:layout_marginTop="50dp"
+                    android:layout_width="120dp"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/phone"
+                    android:id="@+id/ivPhone"
+                    />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/ivShoe"
+                    android:src="@mipmap/nike"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="60dp"
+                    />
+                <TextView
+                    android:id="@+id/tvPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Place your phone here to order"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/videoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+
+</RelativeLayout>
